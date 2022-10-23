@@ -1,0 +1,6 @@
+    DB.lists.map(item => {
+      item.color =DB.colors.filter(
+        color => color.id === item.colorId
+      )[0].name;
+      return item;
+    })
